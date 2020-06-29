@@ -1,0 +1,6 @@
+<h3 data-test="title">{{ data.home.title }}</h3>
+<p data-test="price">${{ data.home.price }} per night</p>
+<p><input type="date" data-test="checkin" [(ngModel)]="checkin"></p>
+<p><input type="date" data-test="checkout" [(ngModel)]="checkout"></p>
+<h4 data-test="total">Total : ${{ calculateTotal() }}</h4>
+<button class="mat-button" data-test="submit-button" (click)="book()">Confirm</button>
